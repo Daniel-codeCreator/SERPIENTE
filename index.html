@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Serpiente</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="scoreDisplay">
+        <p id="levelDisplay"></p>
+        <p id="maxScoreDisplay"></p> <!-- Nuevo elemento para mostrar maxScore -->
+    </div>
+
+    <div id="levelSelection">
+        <button onclick="startGame('easy')">Fácil</button>
+        <button onclick="startGame('medium')">Medio</button>
+        <button onclick="startGame('hard')">Difícil</button>
+    </div>
+    <canvas id="gameCanvas" width="500" height="500"></canvas>
+
+    <div id="gameOverScreen" style="display: none;">
+        <p id="gameOverMessage"></p>
+        <button onclick="restartGame()">Reiniciar</button>
+        <button onclick="returnToMenu()">Menú</button>
+    </div>
+
+    <button onclick="togglePause()" style="display: none;">Pausa</button>
+
+    <script src="app.js">
+    </script>
+
+    <div id="scoreDisplay"></div>
+</body>
+</html>
